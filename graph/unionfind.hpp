@@ -2,25 +2,25 @@
 #include "../template/template.hpp"
 
 struct UnionFind {
-    vector<int> par; // par[i]:i‚Ìe‚Ì”Ô†@(—á) par[3] = 2 : 3‚Ìe‚ª2
+    vector<int> par; // par[i]:iã®è¦ªã®ç•ªå·ã€€(ä¾‹) par[3] = 2 : 3ã®è¦ªãŒ2
 
-    UnionFind(int N) : par(N) { //Å‰‚Í‘S‚Ä‚ªª‚Å‚ ‚é‚Æ‚µ‚Ä‰Šú‰»
+    UnionFind(int N) : par(N) { //æœ€åˆã¯å…¨ã¦ãŒæ ¹ã§ã‚ã‚‹ã¨ã—ã¦åˆæœŸåŒ–
         for(int i = 0; i < N; i++) par[i] = i;
     }
 
-    int root(int x) { // ƒf[ƒ^x‚ª‘®‚·‚é–Ø‚Ìª‚ğÄ‹A‚Å“¾‚éFroot(x) = {x‚Ì–Ø‚Ìª}
+    int root(int x) { // ãƒ‡ãƒ¼ã‚¿xãŒå±ã™ã‚‹æœ¨ã®æ ¹ã‚’å†å¸°ã§å¾—ã‚‹ï¼šroot(x) = {xã®æœ¨ã®æ ¹}
         if (par[x] == x) return x;
         return par[x] = root(par[x]);
     }
 
-    void connect(int x, int y) { // x‚Æy‚Ì–Ø‚ğ•¹‡
-        int rx = root(x); //x‚Ìª‚ğrx
-        int ry = root(y); //y‚Ìª‚ğry
-        if (rx == ry) return; //x‚Æy‚Ìª‚ª“¯‚¶(=“¯‚¶–Ø‚É‚ ‚é)‚Í‚»‚Ì‚Ü‚Ü
-        par[rx] = ry; //x‚Æy‚Ìª‚ª“¯‚¶‚Å‚È‚¢(=“¯‚¶–Ø‚É‚È‚¢)Fx‚Ìªrx‚ğy‚Ìªry‚É‚Â‚¯‚é
+    void connect(int x, int y) { // xã¨yã®æœ¨ã‚’ä½µåˆ
+        int rx = root(x); //xã®æ ¹ã‚’rx
+        int ry = root(y); //yã®æ ¹ã‚’ry
+        if (rx == ry) return; //xã¨yã®æ ¹ãŒåŒã˜(=åŒã˜æœ¨ã«ã‚ã‚‹)æ™‚ã¯ãã®ã¾ã¾
+        par[rx] = ry; //xã¨yã®æ ¹ãŒåŒã˜ã§ãªã„(=åŒã˜æœ¨ã«ãªã„)æ™‚ï¼šxã®æ ¹rxã‚’yã®æ ¹ryã«ã¤ã‘ã‚‹
     }
 
-    bool same(int x, int y) { // 2‚Â‚Ìƒf[ƒ^x, y‚ª‘®‚·‚é–Ø‚ª“¯‚¶‚È‚çtrue‚ğ•Ô‚·
+    bool same(int x, int y) { // 2ã¤ã®ãƒ‡ãƒ¼ã‚¿x, yãŒå±ã™ã‚‹æœ¨ãŒåŒã˜ãªã‚‰trueã‚’è¿”ã™
         int rx = root(x);
         int ry = root(y);
         return rx == ry;
