@@ -6,6 +6,11 @@ data:
     - icon: ':warning:'
       path: graph/Maze.hpp
       title: graph/Maze.hpp
+  - name: template
+    pages:
+    - icon: ':warning:'
+      path: template/template.hpp
+      title: template/template.hpp
   verificationCategories:
   - name: .
     pages:
