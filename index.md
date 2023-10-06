@@ -1,6 +1,11 @@
 ---
 data:
-  libraryCategories: []
+  libraryCategories:
+  - name: graph
+    pages:
+    - icon: ':warning:'
+      path: graph/Maze.hpp
+      title: graph/Maze.hpp
   verificationCategories:
   - name: .
     pages:
