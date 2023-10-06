@@ -6,6 +6,9 @@ data:
     - icon: ':warning:'
       path: graph/Maze.hpp
       title: graph/Maze.hpp
+    - icon: ':warning:'
+      path: graph/unionfind.hpp
+      title: graph/unionfind.hpp
   - name: template
     pages:
     - icon: ':warning:'

@@ -1,7 +1,10 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy: []
+  _extendedRequiredBy:
+  - icon: ':warning:'
+    path: graph/unionfind.hpp
+    title: graph/unionfind.hpp
   _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
@@ -43,7 +46,8 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: template/template.hpp
-  requiredBy: []
+  requiredBy:
+  - graph/unionfind.hpp
   timestamp: '2023-10-06 21:17:00+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
