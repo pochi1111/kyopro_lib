@@ -2,7 +2,27 @@
 #include <bits/stdc++.h>
 using namespace std;
 using ll = long long;
-using ld = long double;
-constexpr int inf = 1 << 30;
-constexpr ll INF = 1LL << 60;
+#define all(x) (x).begin(), (x).end()
+template <typename T, typename U>
+ostream &operator<<(ostream &os, const pair<T, U> &p) {
+    os << p.first << " " << p.second;
+    return os;
+}
+template <typename T, typename U>
+istream &operator>>(istream &is, pair<T, U> &p) {
+    is >> p.first >> p.second;
+    return is;
+}
+
+template <typename T>
+ostream &operator<<(ostream &os, const vector<T> &v) {
+    int s = (int)v.size();
+    for (int i = 0; i < s; i++) os << (i ? " " : "") << v[i];
+    return os;
+}
+template <typename T>
+istream &operator>>(istream &is, vector<T> &v) {
+    for (auto &x : v) is >> x;
+    return is;
+}
 #define rep(i, n) for (int (i) = 0; (i) < (int)(n); (i)++)
