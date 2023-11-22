@@ -3,3 +3,5 @@
 kuroinusanの競プロ用ライブラリです<br>
 ここ見てください<br>
 https://pochi1111.github.io/kyopro_lib/
+<br>
+まだまだ整ってません
