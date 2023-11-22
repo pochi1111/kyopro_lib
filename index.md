@@ -17,7 +17,7 @@ data:
   verificationCategories:
   - name: .
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: example.test.cpp
       title: example.test.cpp
 layout: toppage
