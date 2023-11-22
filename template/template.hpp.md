@@ -11,44 +11,34 @@ data:
   _verificationStatusIcon: ':warning:'
   attributes:
     links: []
-  bundledCode: '#line 2 "template/template.hpp"
-
-    #include <bits/stdc++.h>
-
-    using namespace std;
-
-    using ll = long long;
-
-    using ld = long double;
-
-    constexpr int inf = 1 << 30;
-
-    constexpr ll INF = 1LL << 60;
-
-    #define rep(i, n) for (int (i) = 0; (i) < (int)(n); (i)++)
-
-    '
-  code: '#pragma once
-
-    #include <bits/stdc++.h>
-
-    using namespace std;
-
-    using ll = long long;
-
-    using ld = long double;
-
-    constexpr int inf = 1 << 30;
-
-    constexpr ll INF = 1LL << 60;
-
-    #define rep(i, n) for (int (i) = 0; (i) < (int)(n); (i)++)'
+  bundledCode: "#line 2 \"template/template.hpp\"\n#include <bits/stdc++.h>\nusing\
+    \ namespace std;\nusing ll = long long;\n#define all(x) (x).begin(), (x).end()\n\
+    template <typename T, typename U>\nostream &operator<<(ostream &os, const pair<T,\
+    \ U> &p) {\n    os << p.first << \" \" << p.second;\n    return os;\n}\ntemplate\
+    \ <typename T, typename U>\nistream &operator>>(istream &is, pair<T, U> &p) {\n\
+    \    is >> p.first >> p.second;\n    return is;\n}\n\ntemplate <typename T>\n\
+    ostream &operator<<(ostream &os, const vector<T> &v) {\n    int s = (int)v.size();\n\
+    \    for (int i = 0; i < s; i++) os << (i ? \" \" : \"\") << v[i];\n    return\
+    \ os;\n}\ntemplate <typename T>\nistream &operator>>(istream &is, vector<T> &v)\
+    \ {\n    for (auto &x : v) is >> x;\n    return is;\n}\n#define rep(i, n) for\
+    \ (int (i) = 0; (i) < (int)(n); (i)++)\n"
+  code: "#pragma once\n#include <bits/stdc++.h>\nusing namespace std;\nusing ll =\
+    \ long long;\n#define all(x) (x).begin(), (x).end()\ntemplate <typename T, typename\
+    \ U>\nostream &operator<<(ostream &os, const pair<T, U> &p) {\n    os << p.first\
+    \ << \" \" << p.second;\n    return os;\n}\ntemplate <typename T, typename U>\n\
+    istream &operator>>(istream &is, pair<T, U> &p) {\n    is >> p.first >> p.second;\n\
+    \    return is;\n}\n\ntemplate <typename T>\nostream &operator<<(ostream &os,\
+    \ const vector<T> &v) {\n    int s = (int)v.size();\n    for (int i = 0; i < s;\
+    \ i++) os << (i ? \" \" : \"\") << v[i];\n    return os;\n}\ntemplate <typename\
+    \ T>\nistream &operator>>(istream &is, vector<T> &v) {\n    for (auto &x : v)\
+    \ is >> x;\n    return is;\n}\n#define rep(i, n) for (int (i) = 0; (i) < (int)(n);\
+    \ (i)++)"
   dependsOn: []
   isVerificationFile: false
   path: template/template.hpp
   requiredBy:
   - graph/unionfind.hpp
-  timestamp: '2023-10-06 21:17:00+09:00'
+  timestamp: '2023-11-22 22:40:44+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: template/template.hpp
