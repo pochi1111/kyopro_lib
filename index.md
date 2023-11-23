@@ -11,7 +11,7 @@ data:
       title: graph/unionfind.hpp
   - name: template
     pages:
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: template/template.hpp
       title: template/template.hpp
   verificationCategories:
