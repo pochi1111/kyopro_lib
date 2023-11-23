@@ -1,6 +1,5 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/4/ALDS1_4_B"
-#include <bits/stdc++.h>
-using namespace std;
+#include "template/template.hpp"
 int main() {
     int n; cin >> n;
     vector<int> s(n);
