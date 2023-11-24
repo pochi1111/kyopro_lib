@@ -1,7 +1,8 @@
 [![GitHub Pages](https://img.shields.io/static/v1?label=GitHub+Pages&message=kuroinusan'sLib+&color=brightgreen&logo=github)](https://pochi1111.github.io/kyopro_lib/)
 [![kuroinusan](https://img.shields.io/endpoint?url=https%3A%2F%2Fatcoder-badges.now.sh%2Fapi%2Fatcoder%2Fjson%2Fkuroinusan)](https://atcoder.jp/users/kuroinusan)<br>
-kuroinusan‚Ì‹£ƒvƒ—pƒ‰ƒCƒuƒ‰ƒŠ‚Å‚·<br>
-‚±‚±Œ©‚Ä‚­‚¾‚³‚¢<br>
+kuroinusanã®ç«¶ãƒ—ãƒ­ç”¨ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã§ã™<br>
+ã“ã“è¦‹ã¦ãã ã•ã„<br>
 https://pochi1111.github.io/kyopro_lib/
 <br>
-‚Ü‚¾‚Ü‚¾®‚Á‚Ä‚Ü‚¹‚ñ
+ã¾ã ã¾ã æ•´ã£ã¦ã¾ã›ã‚“<br>
+ãƒ—ãƒ«ãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’è©¦ã—ã¦ã¿ã¦ã¾ã™
