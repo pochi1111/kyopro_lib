@@ -1,4 +1,5 @@
 #pragma once
+#include "template/template.hpp"
 //maze library
 #define wall '#'
 #define road '.'
