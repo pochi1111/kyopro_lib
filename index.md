@@ -14,12 +14,15 @@ data:
     - icon: ':warning:'
       path: math/MEX.hpp
       title: math/MEX.hpp
-    - icon: ':x:'
+    - icon: ':warning:'
       path: math/factorial.hpp
       title: math/factorial.hpp
+    - icon: ':warning:'
+      path: math/prime_fac.hpp
+      title: math/prime_fac.hpp
   - name: template
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: template/template.hpp
       title: template/template.hpp
   verificationCategories:
@@ -28,9 +31,6 @@ data:
     - icon: ':heavy_check_mark:'
       path: tests/example.test.cpp
       title: tests/example.test.cpp
-    - icon: ':x:'
-      path: tests/factorial.test.cpp
-      title: tests/factorial.test.cpp
 layout: toppage
 ---
 [![kuroinusan](https://img.shields.io/endpoint?url=https%3A%2F%2Fatcoder-badges.now.sh%2Fapi%2Fatcoder%2Fjson%2Fkuroinusan)](https://atcoder.jp/users/kuroinusan)<br>

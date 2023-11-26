@@ -21,24 +21,30 @@ data:
     \    for (int i = 0; i < s; i++) os << (i ? \" \" : \"\") << v[i];\n    return\
     \ os;\n}\ntemplate <typename T>\nistream &operator>>(istream &is, vector<T> &v)\
     \ {\n    for (auto &x : v) is >> x;\n    return is;\n}\n#define rep(i, n) for\
-    \ (int (i) = 0; (i) < (int)(n); (i)++)\n#line 3 \"math/factorial.hpp\"\nll factorial(ll\
-    \ n) {\n    ll ret = 1;\n    for (ll i = 2; i <= n; i++) ret *= i;\n    return\
-    \ ret;\n}\n"
-  code: "#pragma once\n#include \"../template/template.hpp\"\nll factorial(ll n) {\n\
-    \    ll ret = 1;\n    for (ll i = 2; i <= n; i++) ret *= i;\n    return ret;\n\
+    \ (int (i) = 0; (i) < (int)(n); (i)++)\n#line 3 \"math/prime_fac.hpp\"\nmap<ll,ll>\
+    \ prime_fac(ll n){\n    vector<pair<ll,ll>> res;\n    for(ll i = 2;i*i<=n;i++){\n\
+    \        if(n%i == 0){\n            ll cnt = 0;\n            while(n%i == 0){\n\
+    \                n /= i;\n                cnt++;\n            }\n            res.emplace_back(i,cnt);\n\
+    \        }\n    }\n    if(n != 1) res.emplace_back(n,1);\n    return map<ll,ll>(res.begin(),res.end());\n\
+    }\n"
+  code: "#pragma once\n#include \"template/template.hpp\"\nmap<ll,ll> prime_fac(ll\
+    \ n){\n    vector<pair<ll,ll>> res;\n    for(ll i = 2;i*i<=n;i++){\n        if(n%i\
+    \ == 0){\n            ll cnt = 0;\n            while(n%i == 0){\n            \
+    \    n /= i;\n                cnt++;\n            }\n            res.emplace_back(i,cnt);\n\
+    \        }\n    }\n    if(n != 1) res.emplace_back(n,1);\n    return map<ll,ll>(res.begin(),res.end());\n\
     }"
   dependsOn:
   - template/template.hpp
   isVerificationFile: false
-  path: math/factorial.hpp
+  path: math/prime_fac.hpp
   requiredBy: []
-  timestamp: '2023-11-26 17:30:41+09:00'
+  timestamp: '2023-11-26 18:00:51+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: math/factorial.hpp
+documentation_of: math/prime_fac.hpp
 layout: document
 redirect_from:
-- /library/math/factorial.hpp
-- /library/math/factorial.hpp.html
-title: math/factorial.hpp
+- /library/math/prime_fac.hpp
+- /library/math/prime_fac.hpp.html
+title: math/prime_fac.hpp
 ---

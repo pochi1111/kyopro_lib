@@ -8,19 +8,19 @@ data:
   - icon: ':warning:'
     path: math/MEX.hpp
     title: math/MEX.hpp
-  - icon: ':x:'
+  - icon: ':warning:'
     path: math/factorial.hpp
     title: math/factorial.hpp
+  - icon: ':warning:'
+    path: math/prime_fac.hpp
+    title: math/prime_fac.hpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: tests/example.test.cpp
     title: tests/example.test.cpp
-  - icon: ':x:'
-    path: tests/factorial.test.cpp
-    title: tests/factorial.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 2 \"template/template.hpp\"\n#include <bits/stdc++.h>\nusing\
@@ -50,13 +50,13 @@ data:
   path: template/template.hpp
   requiredBy:
   - graph/unionfind.hpp
+  - math/prime_fac.hpp
   - math/MEX.hpp
   - math/factorial.hpp
   timestamp: '2023-11-22 22:40:44+09:00'
-  verificationStatus: LIBRARY_SOME_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - tests/example.test.cpp
-  - tests/factorial.test.cpp
 documentation_of: template/template.hpp
 layout: document
 redirect_from:
