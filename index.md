@@ -9,17 +9,22 @@ data:
     - icon: ':warning:'
       path: graph/unionfind.hpp
       title: graph/unionfind.hpp
+  - name: math
+    pages:
+    - icon: ':warning:'
+      path: math/MEX.hpp
+      title: math/MEX.hpp
   - name: template
     pages:
     - icon: ':heavy_check_mark:'
       path: template/template.hpp
       title: template/template.hpp
   verificationCategories:
-  - name: .
+  - name: tests
     pages:
     - icon: ':heavy_check_mark:'
-      path: example.test.cpp
-      title: example.test.cpp
+      path: tests/example.test.cpp
+      title: tests/example.test.cpp
 layout: toppage
 ---
 [![kuroinusan](https://img.shields.io/endpoint?url=https%3A%2F%2Fatcoder-badges.now.sh%2Fapi%2Fatcoder%2Fjson%2Fkuroinusan)](https://atcoder.jp/users/kuroinusan)<br>

@@ -5,10 +5,13 @@ data:
   - icon: ':warning:'
     path: graph/unionfind.hpp
     title: graph/unionfind.hpp
+  - icon: ':warning:'
+    path: math/MEX.hpp
+    title: math/MEX.hpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
-    path: example.test.cpp
-    title: example.test.cpp
+    path: tests/example.test.cpp
+    title: tests/example.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -41,10 +44,11 @@ data:
   path: template/template.hpp
   requiredBy:
   - graph/unionfind.hpp
+  - math/MEX.hpp
   timestamp: '2023-11-22 22:40:44+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - example.test.cpp
+  - tests/example.test.cpp
 documentation_of: template/template.hpp
 layout: document
 redirect_from:
