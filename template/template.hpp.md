@@ -8,16 +8,19 @@ data:
   - icon: ':warning:'
     path: math/MEX.hpp
     title: math/MEX.hpp
-  - icon: ':warning:'
+  - icon: ':x:'
     path: math/factorial.hpp
     title: math/factorial.hpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: tests/example.test.cpp
     title: tests/example.test.cpp
-  _isVerificationFailed: false
+  - icon: ':x:'
+    path: tests/factorial.test.cpp
+    title: tests/factorial.test.cpp
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
   bundledCode: "#line 2 \"template/template.hpp\"\n#include <bits/stdc++.h>\nusing\
@@ -50,9 +53,10 @@ data:
   - math/MEX.hpp
   - math/factorial.hpp
   timestamp: '2023-11-22 22:40:44+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - tests/example.test.cpp
+  - tests/factorial.test.cpp
 documentation_of: template/template.hpp
 layout: document
 redirect_from:
