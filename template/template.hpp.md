@@ -3,6 +3,9 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy:
   - icon: ':warning:'
+    path: graph/Maze.hpp
+    title: "\u30B0\u30EA\u30C3\u30C9\u8FF7\u8DEF(bfs)"
+  - icon: ':warning:'
     path: graph/unionfind.hpp
     title: graph/unionfind.hpp
   - icon: ':warning:'
@@ -49,6 +52,7 @@ data:
   isVerificationFile: false
   path: template/template.hpp
   requiredBy:
+  - graph/Maze.hpp
   - graph/unionfind.hpp
   - math/prime_fac.hpp
   - math/MEX.hpp

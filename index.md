@@ -5,7 +5,7 @@ data:
     pages:
     - icon: ':warning:'
       path: graph/Maze.hpp
-      title: graph/Maze.hpp
+      title: "\u30B0\u30EA\u30C3\u30C9\u8FF7\u8DEF(bfs)"
     - icon: ':warning:'
       path: graph/unionfind.hpp
       title: graph/unionfind.hpp
