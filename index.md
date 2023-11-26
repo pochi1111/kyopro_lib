@@ -14,6 +14,9 @@ data:
     - icon: ':warning:'
       path: math/MEX.hpp
       title: math/MEX.hpp
+    - icon: ':warning:'
+      path: math/factorial.hpp
+      title: math/factorial.hpp
   - name: template
     pages:
     - icon: ':heavy_check_mark:'
