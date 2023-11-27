@@ -5,10 +5,13 @@ data:
     path: template/template.hpp
     title: template/template.hpp
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: tests/RMQ_min.test.cpp
+    title: tests/RMQ_min.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 2 \"template/template.hpp\"\n#include <bits/stdc++.h>\nusing\
@@ -54,8 +57,9 @@ data:
   path: graph/RMQ_min.hpp
   requiredBy: []
   timestamp: '2023-11-27 22:15:47+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - tests/RMQ_min.test.cpp
 documentation_of: graph/RMQ_min.hpp
 layout: document
 redirect_from:

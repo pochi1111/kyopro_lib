@@ -5,7 +5,7 @@ data:
   - icon: ':warning:'
     path: graph/Maze.hpp
     title: "\u30B0\u30EA\u30C3\u30C9\u8FF7\u8DEF(bfs)"
-  - icon: ':warning:'
+  - icon: ':heavy_check_mark:'
     path: graph/RMQ_min.hpp
     title: graph/RMQ_min.hpp
   - icon: ':warning:'
@@ -21,6 +21,9 @@ data:
     path: math/prime_fac.hpp
     title: math/prime_fac.hpp
   _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: tests/RMQ_min.test.cpp
+    title: tests/RMQ_min.test.cpp
   - icon: ':heavy_check_mark:'
     path: tests/example.test.cpp
     title: tests/example.test.cpp
@@ -65,6 +68,7 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - tests/example.test.cpp
+  - tests/RMQ_min.test.cpp
 documentation_of: template/template.hpp
 layout: document
 redirect_from:
