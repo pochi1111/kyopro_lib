@@ -8,6 +8,11 @@ ostream &operator<<(ostream &os, const pair<T, U> &p) {
     os << p.first << " " << p.second;
     return os;
 }
+ll sum(vector<ll> a){
+    ll res = 0;
+    for(auto x:a) res += x;
+    return res;
+}
 template <typename T, typename U>
 istream &operator>>(istream &is, pair<T, U> &p) {
     is >> p.first >> p.second;
