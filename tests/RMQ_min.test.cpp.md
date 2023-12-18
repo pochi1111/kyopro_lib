@@ -21,7 +21,8 @@ data:
     \n#line 2 \"template/template.hpp\"\n#include <bits/stdc++.h>\nusing namespace\
     \ std;\nusing ll = long long;\n#define all(x) (x).begin(), (x).end()\ntemplate\
     \ <typename T, typename U>\nostream &operator<<(ostream &os, const pair<T, U>\
-    \ &p) {\n    os << p.first << \" \" << p.second;\n    return os;\n}\ntemplate\
+    \ &p) {\n    os << p.first << \" \" << p.second;\n    return os;\n}\nll sum(vector<ll>\
+    \ a){\n    ll res = 0;\n    for(auto x:a) res += x;\n    return res;\n}\ntemplate\
     \ <typename T, typename U>\nistream &operator>>(istream &is, pair<T, U> &p) {\n\
     \    is >> p.first >> p.second;\n    return is;\n}\n\ntemplate <typename T>\n\
     ostream &operator<<(ostream &os, const vector<T> &v) {\n    int s = (int)v.size();\n\
@@ -56,7 +57,7 @@ data:
   isVerificationFile: true
   path: tests/RMQ_min.test.cpp
   requiredBy: []
-  timestamp: '2023-11-27 22:18:41+09:00'
+  timestamp: '2023-12-18 13:39:59+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: tests/RMQ_min.test.cpp

@@ -14,7 +14,8 @@ data:
   bundledCode: "#line 2 \"template/template.hpp\"\n#include <bits/stdc++.h>\nusing\
     \ namespace std;\nusing ll = long long;\n#define all(x) (x).begin(), (x).end()\n\
     template <typename T, typename U>\nostream &operator<<(ostream &os, const pair<T,\
-    \ U> &p) {\n    os << p.first << \" \" << p.second;\n    return os;\n}\ntemplate\
+    \ U> &p) {\n    os << p.first << \" \" << p.second;\n    return os;\n}\nll sum(vector<ll>\
+    \ a){\n    ll res = 0;\n    for(auto x:a) res += x;\n    return res;\n}\ntemplate\
     \ <typename T, typename U>\nistream &operator>>(istream &is, pair<T, U> &p) {\n\
     \    is >> p.first >> p.second;\n    return is;\n}\n\ntemplate <typename T>\n\
     ostream &operator<<(ostream &os, const vector<T> &v) {\n    int s = (int)v.size();\n\
@@ -38,7 +39,7 @@ data:
   isVerificationFile: false
   path: math/prime_fac.hpp
   requiredBy: []
-  timestamp: '2023-11-26 18:00:51+09:00'
+  timestamp: '2023-12-18 13:39:59+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: math/prime_fac.hpp
