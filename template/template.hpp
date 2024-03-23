@@ -31,3 +31,4 @@ istream &operator>>(istream &is, vector<T> &v) {
     return is;
 }
 #define rep(i, n) for (ll (i) = 0; (i) < (ll)(n); (i)++)
+#define rep2(i, s, n) for (ll (i) = (s); (i) < (ll)(n); (i)++)
