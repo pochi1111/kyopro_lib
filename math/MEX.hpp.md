@@ -22,20 +22,20 @@ data:
     \    for (int i = 0; i < s; i++) os << (i ? \" \" : \"\") << v[i];\n    return\
     \ os;\n}\ntemplate <typename T>\nistream &operator>>(istream &is, vector<T> &v)\
     \ {\n    for (auto &x : v) is >> x;\n    return is;\n}\n#define rep(i, n) for\
-    \ (int (i) = 0; (i) < (int)(n); (i)++)\n#line 3 \"math/MEX.hpp\"\nstruct MEX {\n\
-    \    set<pair<ll,ll>> st;\n    // set\u306Bv\u3092\u8FFD\u52A0(v\u304C\u3042\u308B\
-    \u3068\u304D\u306E\u52D5\u4F5C\u306F\u672A\u5B9A\u7FA9)\n    void insert(ll v)\
-    \ {\n        auto t = st.lower_bound({v-1,2});\n        if (t != st.end() && t->first\
-    \ == v-1) t = st.erase(t);\n        else st.insert({v,1});\n        if (t != st.end()\
-    \ && t->first == v+1) st.erase(t);\n        else st.insert({v,2});\n    }\n  \
-    \  // set\u304B\u3089v\u3092\u524A\u9664(v\u304C\u306A\u3044\u3068\u304D\u306E\
-    \u52D5\u4F5C\u306F\u672A\u5B9A\u7FA9)\n    void erase(ll v) {\n        auto t\
-    \ = st.lower_bound({v,2}); t--;\n        if (t->first == v) st.erase(t);\n   \
-    \     else st.insert({v-1,2});\n        t = st.lower_bound({v,2});\n        if\
-    \ (t->first == v) st.erase(t);\n        else st.insert({v+1,1});\n    }\n    ll\
-    \ mex() {\n        auto t = st.lower_bound({0,-1});\n        if (t->first != 0)\
-    \ return 0;\n        else {\n            t++;\n            return t->first + 1;\n\
-    \        }\n    }\n};\n"
+    \ (int (i) = 0; (i) < (int)(n); (i)++)\n#define rep2(i, s, n) for (int (i) = (s);\
+    \ (i) < (int)(n); (i)++)\n#line 3 \"math/MEX.hpp\"\nstruct MEX {\n    set<pair<ll,ll>>\
+    \ st;\n    // set\u306Bv\u3092\u8FFD\u52A0(v\u304C\u3042\u308B\u3068\u304D\u306E\
+    \u52D5\u4F5C\u306F\u672A\u5B9A\u7FA9)\n    void insert(ll v) {\n        auto t\
+    \ = st.lower_bound({v-1,2});\n        if (t != st.end() && t->first == v-1) t\
+    \ = st.erase(t);\n        else st.insert({v,1});\n        if (t != st.end() &&\
+    \ t->first == v+1) st.erase(t);\n        else st.insert({v,2});\n    }\n    //\
+    \ set\u304B\u3089v\u3092\u524A\u9664(v\u304C\u306A\u3044\u3068\u304D\u306E\u52D5\
+    \u4F5C\u306F\u672A\u5B9A\u7FA9)\n    void erase(ll v) {\n        auto t = st.lower_bound({v,2});\
+    \ t--;\n        if (t->first == v) st.erase(t);\n        else st.insert({v-1,2});\n\
+    \        t = st.lower_bound({v,2});\n        if (t->first == v) st.erase(t);\n\
+    \        else st.insert({v+1,1});\n    }\n    ll mex() {\n        auto t = st.lower_bound({0,-1});\n\
+    \        if (t->first != 0) return 0;\n        else {\n            t++;\n    \
+    \        return t->first + 1;\n        }\n    }\n};\n"
   code: "#pragma once\n#include \"../template/template.hpp\"\nstruct MEX {\n    set<pair<ll,ll>>\
     \ st;\n    // set\u306Bv\u3092\u8FFD\u52A0(v\u304C\u3042\u308B\u3068\u304D\u306E\
     \u52D5\u4F5C\u306F\u672A\u5B9A\u7FA9)\n    void insert(ll v) {\n        auto t\
@@ -54,7 +54,7 @@ data:
   isVerificationFile: false
   path: math/MEX.hpp
   requiredBy: []
-  timestamp: '2023-12-18 13:39:59+09:00'
+  timestamp: '2024-03-23 14:03:42+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: math/MEX.hpp

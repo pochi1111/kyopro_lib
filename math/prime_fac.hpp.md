@@ -22,10 +22,11 @@ data:
     \    for (int i = 0; i < s; i++) os << (i ? \" \" : \"\") << v[i];\n    return\
     \ os;\n}\ntemplate <typename T>\nistream &operator>>(istream &is, vector<T> &v)\
     \ {\n    for (auto &x : v) is >> x;\n    return is;\n}\n#define rep(i, n) for\
-    \ (int (i) = 0; (i) < (int)(n); (i)++)\n#line 3 \"math/prime_fac.hpp\"\nmap<ll,ll>\
-    \ prime_fac(ll n){\n    vector<pair<ll,ll>> res;\n    for(ll i = 2;i*i<=n;i++){\n\
-    \        if(n%i == 0){\n            ll cnt = 0;\n            while(n%i == 0){\n\
-    \                n /= i;\n                cnt++;\n            }\n            res.emplace_back(i,cnt);\n\
+    \ (int (i) = 0; (i) < (int)(n); (i)++)\n#define rep2(i, s, n) for (int (i) = (s);\
+    \ (i) < (int)(n); (i)++)\n#line 3 \"math/prime_fac.hpp\"\nmap<ll,ll> prime_fac(ll\
+    \ n){\n    vector<pair<ll,ll>> res;\n    for(ll i = 2;i*i<=n;i++){\n        if(n%i\
+    \ == 0){\n            ll cnt = 0;\n            while(n%i == 0){\n            \
+    \    n /= i;\n                cnt++;\n            }\n            res.emplace_back(i,cnt);\n\
     \        }\n    }\n    if(n != 1) res.emplace_back(n,1);\n    return map<ll,ll>(res.begin(),res.end());\n\
     }\n"
   code: "#pragma once\n#include \"template/template.hpp\"\nmap<ll,ll> prime_fac(ll\
@@ -39,7 +40,7 @@ data:
   isVerificationFile: false
   path: math/prime_fac.hpp
   requiredBy: []
-  timestamp: '2023-12-18 13:39:59+09:00'
+  timestamp: '2024-03-23 14:03:42+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: math/prime_fac.hpp

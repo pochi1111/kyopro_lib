@@ -22,13 +22,14 @@ data:
     \    for (int i = 0; i < s; i++) os << (i ? \" \" : \"\") << v[i];\n    return\
     \ os;\n}\ntemplate <typename T>\nistream &operator>>(istream &is, vector<T> &v)\
     \ {\n    for (auto &x : v) is >> x;\n    return is;\n}\n#define rep(i, n) for\
-    \ (int (i) = 0; (i) < (int)(n); (i)++)\n#line 3 \"graph/Maze.hpp\"\n//maze library\n\
-    #define wall '#'\n#define road '.'\nstruct Maze{\n    int H,W;\n    int sx,sy;\n\
-    \    vector<string> maze;\n    vector<vector<int>> dist;\n    bool finished =\
-    \ false;\n    void input(int h,int w){\n        H = h;\n        W = w;\n     \
-    \   maze = vector<string>(H);\n   }\n    void input_maze(vector<string> inp_maze){\n\
-    \        maze = inp_maze;\n    }\n    void input_start(int x,int y){\n       \
-    \ sx = x;\n        sy = y;\n    }\n    void bfs_start(){\n        dist = vector<vector<int>>(H,vector<int>(W,-1));\n\
+    \ (int (i) = 0; (i) < (int)(n); (i)++)\n#define rep2(i, s, n) for (int (i) = (s);\
+    \ (i) < (int)(n); (i)++)\n#line 3 \"graph/Maze.hpp\"\n//maze library\n#define\
+    \ wall '#'\n#define road '.'\nstruct Maze{\n    int H,W;\n    int sx,sy;\n   \
+    \ vector<string> maze;\n    vector<vector<int>> dist;\n    bool finished = false;\n\
+    \    void input(int h,int w){\n        H = h;\n        W = w;\n        maze =\
+    \ vector<string>(H);\n   }\n    void input_maze(vector<string> inp_maze){\n  \
+    \      maze = inp_maze;\n    }\n    void input_start(int x,int y){\n        sx\
+    \ = x;\n        sy = y;\n    }\n    void bfs_start(){\n        dist = vector<vector<int>>(H,vector<int>(W,-1));\n\
     \        queue<pair<int,int>> que;\n        vector<vector<bool>> used(H,vector<bool>(W,false));\n\
     \        que.push(make_pair(sx,sy));\n        dist[sx][sy] = 0;\n        while(!que.empty()){\n\
     \            pair<int,int> p = que.front();\n            que.pop();\n        \
@@ -71,7 +72,7 @@ data:
   isVerificationFile: false
   path: graph/Maze.hpp
   requiredBy: []
-  timestamp: '2023-12-18 13:39:59+09:00'
+  timestamp: '2024-03-23 14:03:42+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: graph/Maze.hpp

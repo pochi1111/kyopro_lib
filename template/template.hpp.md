@@ -43,7 +43,8 @@ data:
     \    for (int i = 0; i < s; i++) os << (i ? \" \" : \"\") << v[i];\n    return\
     \ os;\n}\ntemplate <typename T>\nistream &operator>>(istream &is, vector<T> &v)\
     \ {\n    for (auto &x : v) is >> x;\n    return is;\n}\n#define rep(i, n) for\
-    \ (int (i) = 0; (i) < (int)(n); (i)++)\n"
+    \ (int (i) = 0; (i) < (int)(n); (i)++)\n#define rep2(i, s, n) for (int (i) = (s);\
+    \ (i) < (int)(n); (i)++)\n"
   code: "#pragma once\n#include <bits/stdc++.h>\nusing namespace std;\nusing ll =\
     \ long long;\n#define all(x) (x).begin(), (x).end()\ntemplate <typename T, typename\
     \ U>\nostream &operator<<(ostream &os, const pair<T, U> &p) {\n    os << p.first\
@@ -55,22 +56,22 @@ data:
     \ i < s; i++) os << (i ? \" \" : \"\") << v[i];\n    return os;\n}\ntemplate <typename\
     \ T>\nistream &operator>>(istream &is, vector<T> &v) {\n    for (auto &x : v)\
     \ is >> x;\n    return is;\n}\n#define rep(i, n) for (int (i) = 0; (i) < (int)(n);\
-    \ (i)++)"
+    \ (i)++)\n#define rep2(i, s, n) for (int (i) = (s); (i) < (int)(n); (i)++)"
   dependsOn: []
   isVerificationFile: false
   path: template/template.hpp
   requiredBy:
-  - math/prime_fac.hpp
   - math/MEX.hpp
+  - math/prime_fac.hpp
   - math/factorial.hpp
   - graph/RMQ_min.hpp
   - graph/unionfind.hpp
   - graph/Maze.hpp
-  timestamp: '2023-12-18 13:39:59+09:00'
+  timestamp: '2024-03-23 14:03:42+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - tests/RMQ_min.test.cpp
   - tests/example.test.cpp
+  - tests/RMQ_min.test.cpp
 documentation_of: template/template.hpp
 layout: document
 redirect_from:

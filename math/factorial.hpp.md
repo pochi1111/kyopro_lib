@@ -22,9 +22,10 @@ data:
     \    for (int i = 0; i < s; i++) os << (i ? \" \" : \"\") << v[i];\n    return\
     \ os;\n}\ntemplate <typename T>\nistream &operator>>(istream &is, vector<T> &v)\
     \ {\n    for (auto &x : v) is >> x;\n    return is;\n}\n#define rep(i, n) for\
-    \ (int (i) = 0; (i) < (int)(n); (i)++)\n#line 3 \"math/factorial.hpp\"\nll factorial(ll\
-    \ n) {\n    ll ret = 1;\n    for (ll i = 2; i <= n; i++) ret *= i;\n    return\
-    \ ret;\n}\n"
+    \ (int (i) = 0; (i) < (int)(n); (i)++)\n#define rep2(i, s, n) for (int (i) = (s);\
+    \ (i) < (int)(n); (i)++)\n#line 3 \"math/factorial.hpp\"\nll factorial(ll n) {\n\
+    \    ll ret = 1;\n    for (ll i = 2; i <= n; i++) ret *= i;\n    return ret;\n\
+    }\n"
   code: "#pragma once\n#include \"../template/template.hpp\"\nll factorial(ll n) {\n\
     \    ll ret = 1;\n    for (ll i = 2; i <= n; i++) ret *= i;\n    return ret;\n\
     }"
@@ -33,7 +34,7 @@ data:
   isVerificationFile: false
   path: math/factorial.hpp
   requiredBy: []
-  timestamp: '2023-12-18 13:39:59+09:00'
+  timestamp: '2024-03-23 14:03:42+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: math/factorial.hpp

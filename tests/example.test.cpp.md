@@ -26,10 +26,11 @@ data:
     \    for (int i = 0; i < s; i++) os << (i ? \" \" : \"\") << v[i];\n    return\
     \ os;\n}\ntemplate <typename T>\nistream &operator>>(istream &is, vector<T> &v)\
     \ {\n    for (auto &x : v) is >> x;\n    return is;\n}\n#define rep(i, n) for\
-    \ (int (i) = 0; (i) < (int)(n); (i)++)\n#line 3 \"tests/example.test.cpp\"\nint\
-    \ main() {\n    int n; cin >> n;\n    vector<int> s(n);\n    for(int i = 0;i<n;i++){\n\
-    \        cin >> s[i];\n    }\n    int q; cin >> q;\n    int cnt = 0;\n    while\
-    \ (q --) {\n        int t_i; cin >> t_i;\n        cnt += binary_search(s.begin(),s.end(),\
+    \ (int (i) = 0; (i) < (int)(n); (i)++)\n#define rep2(i, s, n) for (int (i) = (s);\
+    \ (i) < (int)(n); (i)++)\n#line 3 \"tests/example.test.cpp\"\nint main() {\n \
+    \   int n; cin >> n;\n    vector<int> s(n);\n    for(int i = 0;i<n;i++){\n   \
+    \     cin >> s[i];\n    }\n    int q; cin >> q;\n    int cnt = 0;\n    while (q\
+    \ --) {\n        int t_i; cin >> t_i;\n        cnt += binary_search(s.begin(),s.end(),\
     \ t_i);\n    }\n    cout << cnt << endl;\n    return 0;\n}\n"
   code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/4/ALDS1_4_B\"\
     \n#include \"template/template.hpp\"\nint main() {\n    int n; cin >> n;\n   \
@@ -42,7 +43,7 @@ data:
   isVerificationFile: true
   path: tests/example.test.cpp
   requiredBy: []
-  timestamp: '2023-12-18 13:39:59+09:00'
+  timestamp: '2024-03-23 14:03:42+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: tests/example.test.cpp
