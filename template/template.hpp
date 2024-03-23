@@ -21,8 +21,8 @@ istream &operator>>(istream &is, pair<T, U> &p) {
 
 template <typename T>
 ostream &operator<<(ostream &os, const vector<T> &v) {
-    int s = (int)v.size();
-    for (int i = 0; i < s; i++) os << (i ? " " : "") << v[i];
+    ll s = (ll)v.size();
+    for (ll i = 0; i < s; i++) os << (i ? " " : "") << v[i];
     return os;
 }
 template <typename T>
@@ -30,4 +30,4 @@ istream &operator>>(istream &is, vector<T> &v) {
     for (auto &x : v) is >> x;
     return is;
 }
-#define rep(i, n) for (int (i) = 0; (i) < (int)(n); (i)++)
+#define rep(i, n) for (ll (i) = 0; (i) < (ll)(n); (i)++)
