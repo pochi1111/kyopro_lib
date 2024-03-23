@@ -21,12 +21,12 @@ data:
     \ a){\n    ll res = 0;\n    for(auto x:a) res += x;\n    return res;\n}\ntemplate\
     \ <typename T, typename U>\nistream &operator>>(istream &is, pair<T, U> &p) {\n\
     \    is >> p.first >> p.second;\n    return is;\n}\n\ntemplate <typename T>\n\
-    ostream &operator<<(ostream &os, const vector<T> &v) {\n    int s = (int)v.size();\n\
-    \    for (int i = 0; i < s; i++) os << (i ? \" \" : \"\") << v[i];\n    return\
+    ostream &operator<<(ostream &os, const vector<T> &v) {\n    ll s = (ll)v.size();\n\
+    \    for (ll i = 0; i < s; i++) os << (i ? \" \" : \"\") << v[i];\n    return\
     \ os;\n}\ntemplate <typename T>\nistream &operator>>(istream &is, vector<T> &v)\
     \ {\n    for (auto &x : v) is >> x;\n    return is;\n}\n#define rep(i, n) for\
-    \ (int (i) = 0; (i) < (int)(n); (i)++)\n#define rep2(i, s, n) for (int (i) = (s);\
-    \ (i) < (int)(n); (i)++)\n#line 3 \"graph/RMQ_min.hpp\"\nstruct RMQ{\n    vector<ll>\
+    \ (ll (i) = 0; (i) < (ll)(n); (i)++)\n#define rep2(i, s, n) for (ll (i) = (s);\
+    \ (i) < (ll)(n); (i)++)\n#line 3 \"graph/RMQ_min.hpp\"\nstruct RMQ{\n    vector<ll>\
     \ x;\n    vector<ll> dat;\n    RMQ(vector<ll> x){\n        int M = 1;\n      \
     \  //\u521D\u671F\u5316 |1-indexed|0\u306F\u7121\u8996\u3057\u307E\u3057\u3087\
     \u3046|\n        while(M < x.size()) M *= 2;\n        dat = vector<ll> (M*2,LLONG_MAX);\n\
@@ -57,7 +57,7 @@ data:
   isVerificationFile: false
   path: graph/RMQ_min.hpp
   requiredBy: []
-  timestamp: '2024-03-23 14:03:42+09:00'
+  timestamp: '2024-03-23 14:08:26+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - tests/RMQ_min.test.cpp

@@ -22,14 +22,14 @@ data:
     \ a){\n    ll res = 0;\n    for(auto x:a) res += x;\n    return res;\n}\ntemplate\
     \ <typename T, typename U>\nistream &operator>>(istream &is, pair<T, U> &p) {\n\
     \    is >> p.first >> p.second;\n    return is;\n}\n\ntemplate <typename T>\n\
-    ostream &operator<<(ostream &os, const vector<T> &v) {\n    int s = (int)v.size();\n\
-    \    for (int i = 0; i < s; i++) os << (i ? \" \" : \"\") << v[i];\n    return\
+    ostream &operator<<(ostream &os, const vector<T> &v) {\n    ll s = (ll)v.size();\n\
+    \    for (ll i = 0; i < s; i++) os << (i ? \" \" : \"\") << v[i];\n    return\
     \ os;\n}\ntemplate <typename T>\nistream &operator>>(istream &is, vector<T> &v)\
     \ {\n    for (auto &x : v) is >> x;\n    return is;\n}\n#define rep(i, n) for\
-    \ (int (i) = 0; (i) < (int)(n); (i)++)\n#define rep2(i, s, n) for (int (i) = (s);\
-    \ (i) < (int)(n); (i)++)\n#line 3 \"tests/example.test.cpp\"\nint main() {\n \
-    \   int n; cin >> n;\n    vector<int> s(n);\n    for(int i = 0;i<n;i++){\n   \
-    \     cin >> s[i];\n    }\n    int q; cin >> q;\n    int cnt = 0;\n    while (q\
+    \ (ll (i) = 0; (i) < (ll)(n); (i)++)\n#define rep2(i, s, n) for (ll (i) = (s);\
+    \ (i) < (ll)(n); (i)++)\n#line 3 \"tests/example.test.cpp\"\nint main() {\n  \
+    \  int n; cin >> n;\n    vector<int> s(n);\n    for(int i = 0;i<n;i++){\n    \
+    \    cin >> s[i];\n    }\n    int q; cin >> q;\n    int cnt = 0;\n    while (q\
     \ --) {\n        int t_i; cin >> t_i;\n        cnt += binary_search(s.begin(),s.end(),\
     \ t_i);\n    }\n    cout << cnt << endl;\n    return 0;\n}\n"
   code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/4/ALDS1_4_B\"\
@@ -43,7 +43,7 @@ data:
   isVerificationFile: true
   path: tests/example.test.cpp
   requiredBy: []
-  timestamp: '2024-03-23 14:03:42+09:00'
+  timestamp: '2024-03-23 14:08:26+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: tests/example.test.cpp

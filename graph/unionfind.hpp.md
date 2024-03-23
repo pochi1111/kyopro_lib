@@ -18,14 +18,14 @@ data:
     \ a){\n    ll res = 0;\n    for(auto x:a) res += x;\n    return res;\n}\ntemplate\
     \ <typename T, typename U>\nistream &operator>>(istream &is, pair<T, U> &p) {\n\
     \    is >> p.first >> p.second;\n    return is;\n}\n\ntemplate <typename T>\n\
-    ostream &operator<<(ostream &os, const vector<T> &v) {\n    int s = (int)v.size();\n\
-    \    for (int i = 0; i < s; i++) os << (i ? \" \" : \"\") << v[i];\n    return\
+    ostream &operator<<(ostream &os, const vector<T> &v) {\n    ll s = (ll)v.size();\n\
+    \    for (ll i = 0; i < s; i++) os << (i ? \" \" : \"\") << v[i];\n    return\
     \ os;\n}\ntemplate <typename T>\nistream &operator>>(istream &is, vector<T> &v)\
     \ {\n    for (auto &x : v) is >> x;\n    return is;\n}\n#define rep(i, n) for\
-    \ (int (i) = 0; (i) < (int)(n); (i)++)\n#define rep2(i, s, n) for (int (i) = (s);\
-    \ (i) < (int)(n); (i)++)\n#line 3 \"graph/unionfind.hpp\"\n\nstruct UnionFind\
-    \ {\n    vector<int> par; // par[i]:i\u306E\u89AA\u306E\u756A\u53F7\u3000(\u4F8B\
-    ) par[3] = 2 : 3\u306E\u89AA\u304C2\n\n    UnionFind(int N) : par(N) { //\u6700\
+    \ (ll (i) = 0; (i) < (ll)(n); (i)++)\n#define rep2(i, s, n) for (ll (i) = (s);\
+    \ (i) < (ll)(n); (i)++)\n#line 3 \"graph/unionfind.hpp\"\n\nstruct UnionFind {\n\
+    \    vector<int> par; // par[i]:i\u306E\u89AA\u306E\u756A\u53F7\u3000(\u4F8B)\
+    \ par[3] = 2 : 3\u306E\u89AA\u304C2\n\n    UnionFind(int N) : par(N) { //\u6700\
     \u521D\u306F\u5168\u3066\u304C\u6839\u3067\u3042\u308B\u3068\u3057\u3066\u521D\
     \u671F\u5316\n        for(int i = 0; i < N; i++) par[i] = i;\n    }\n\n    int\
     \ root(int x) { // \u30C7\u30FC\u30BFx\u304C\u5C5E\u3059\u308B\u6728\u306E\u6839\
@@ -64,7 +64,7 @@ data:
   isVerificationFile: false
   path: graph/unionfind.hpp
   requiredBy: []
-  timestamp: '2024-03-23 14:03:42+09:00'
+  timestamp: '2024-03-23 14:08:26+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: graph/unionfind.hpp

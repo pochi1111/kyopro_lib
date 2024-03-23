@@ -39,12 +39,12 @@ data:
     \ a){\n    ll res = 0;\n    for(auto x:a) res += x;\n    return res;\n}\ntemplate\
     \ <typename T, typename U>\nistream &operator>>(istream &is, pair<T, U> &p) {\n\
     \    is >> p.first >> p.second;\n    return is;\n}\n\ntemplate <typename T>\n\
-    ostream &operator<<(ostream &os, const vector<T> &v) {\n    int s = (int)v.size();\n\
-    \    for (int i = 0; i < s; i++) os << (i ? \" \" : \"\") << v[i];\n    return\
+    ostream &operator<<(ostream &os, const vector<T> &v) {\n    ll s = (ll)v.size();\n\
+    \    for (ll i = 0; i < s; i++) os << (i ? \" \" : \"\") << v[i];\n    return\
     \ os;\n}\ntemplate <typename T>\nistream &operator>>(istream &is, vector<T> &v)\
     \ {\n    for (auto &x : v) is >> x;\n    return is;\n}\n#define rep(i, n) for\
-    \ (int (i) = 0; (i) < (int)(n); (i)++)\n#define rep2(i, s, n) for (int (i) = (s);\
-    \ (i) < (int)(n); (i)++)\n"
+    \ (ll (i) = 0; (i) < (ll)(n); (i)++)\n#define rep2(i, s, n) for (ll (i) = (s);\
+    \ (i) < (ll)(n); (i)++)\n"
   code: "#pragma once\n#include <bits/stdc++.h>\nusing namespace std;\nusing ll =\
     \ long long;\n#define all(x) (x).begin(), (x).end()\ntemplate <typename T, typename\
     \ U>\nostream &operator<<(ostream &os, const pair<T, U> &p) {\n    os << p.first\
@@ -52,11 +52,11 @@ data:
     \ = 0;\n    for(auto x:a) res += x;\n    return res;\n}\ntemplate <typename T,\
     \ typename U>\nistream &operator>>(istream &is, pair<T, U> &p) {\n    is >> p.first\
     \ >> p.second;\n    return is;\n}\n\ntemplate <typename T>\nostream &operator<<(ostream\
-    \ &os, const vector<T> &v) {\n    int s = (int)v.size();\n    for (int i = 0;\
-    \ i < s; i++) os << (i ? \" \" : \"\") << v[i];\n    return os;\n}\ntemplate <typename\
+    \ &os, const vector<T> &v) {\n    ll s = (ll)v.size();\n    for (ll i = 0; i <\
+    \ s; i++) os << (i ? \" \" : \"\") << v[i];\n    return os;\n}\ntemplate <typename\
     \ T>\nistream &operator>>(istream &is, vector<T> &v) {\n    for (auto &x : v)\
-    \ is >> x;\n    return is;\n}\n#define rep(i, n) for (int (i) = 0; (i) < (int)(n);\
-    \ (i)++)\n#define rep2(i, s, n) for (int (i) = (s); (i) < (int)(n); (i)++)"
+    \ is >> x;\n    return is;\n}\n#define rep(i, n) for (ll (i) = 0; (i) < (ll)(n);\
+    \ (i)++)\n#define rep2(i, s, n) for (ll (i) = (s); (i) < (ll)(n); (i)++)"
   dependsOn: []
   isVerificationFile: false
   path: template/template.hpp
@@ -67,7 +67,7 @@ data:
   - graph/RMQ_min.hpp
   - graph/unionfind.hpp
   - graph/Maze.hpp
-  timestamp: '2024-03-23 14:03:42+09:00'
+  timestamp: '2024-03-23 14:08:26+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - tests/example.test.cpp
