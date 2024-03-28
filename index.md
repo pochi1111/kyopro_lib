@@ -1,6 +1,11 @@
 ---
 data:
   libraryCategories:
+  - name: data-structure
+    pages:
+    - icon: ':warning:'
+      path: data-structure/MEX.hpp
+      title: data-structure/MEX.hpp
   - name: graph
     pages:
     - icon: ':warning:'

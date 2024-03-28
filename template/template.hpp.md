@@ -3,6 +3,9 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy:
   - icon: ':warning:'
+    path: data-structure/MEX.hpp
+    title: data-structure/MEX.hpp
+  - icon: ':warning:'
     path: graph/Maze.hpp
     title: "\u30B0\u30EA\u30C3\u30C9\u8FF7\u8DEF(bfs)"
   - icon: ':heavy_check_mark:'
@@ -64,6 +67,7 @@ data:
   - math/MEX.hpp
   - math/prime_fac.hpp
   - math/factorial.hpp
+  - data-structure/MEX.hpp
   - graph/RMQ_min.hpp
   - graph/unionfind.hpp
   - graph/Maze.hpp
