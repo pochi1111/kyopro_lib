@@ -4,9 +4,13 @@
 struct MEX {
     set<pair<ll,ll>> st;
     map<ll,ll> mp;
-    MEX(vector<ll> x){
+    void clear(){
+        st.clear();
+        mp.clear();
+    }
+    void set(vector<ll> x){
+        clear();
         for (auto v : x) insert(v);
-
     }
     void insert(ll v) {
         mp[v] += 1;
