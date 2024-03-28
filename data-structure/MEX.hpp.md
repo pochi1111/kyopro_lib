@@ -25,7 +25,8 @@ data:
     \ (ll (i) = 0; (i) < (ll)(n); (i)++)\n#define rep2(i, s, n) for (ll (i) = (s);\
     \ (i) < (ll)(n); (i)++)\n#line 3 \"data-structure/MEX.hpp\"\n//\u57FA\u672C\u306E\
     \u578B\u306Fll\nstruct MEX {\n    set<pair<ll,ll>> st;\n    map<ll,ll> mp;\n \
-    \   MEX(vector<ll> x){\n        for (auto v : x) insert(v);\n\n    }\n    void\
+    \   void clear(){\n        st.clear();\n        mp.clear();\n    }\n    void set(vector<ll>\
+    \ x){\n        clear();\n        for (auto v : x) insert(v);\n    }\n    void\
     \ insert(ll v) {\n        mp[v] += 1;\n        if (mp[v] > 1){\n            return;\n\
     \        }\n        auto t = st.lower_bound({v-1,2});\n        if (t != st.end()\
     \ && t->first == v-1) t = st.erase(t);\n        else st.insert({v,1});\n     \
@@ -38,15 +39,16 @@ data:
     \        if (t->first != 0) return 0;\n        else {\n            t++;\n    \
     \        return t->first + 1;\n        }\n    }\n};\n"
   code: "#pragma once\n#include \"template/template.hpp\"\n//\u57FA\u672C\u306E\u578B\
-    \u306Fll\nstruct MEX {\n    set<pair<ll,ll>> st;\n    map<ll,ll> mp;\n    MEX(vector<ll>\
-    \ x){\n        for (auto v : x) insert(v);\n\n    }\n    void insert(ll v) {\n\
-    \        mp[v] += 1;\n        if (mp[v] > 1){\n            return;\n        }\n\
-    \        auto t = st.lower_bound({v-1,2});\n        if (t != st.end() && t->first\
-    \ == v-1) t = st.erase(t);\n        else st.insert({v,1});\n        if (t != st.end()\
-    \ && t->first == v+1) st.erase(t);\n        else st.insert({v,2});\n    }\n  \
-    \  void erase(ll v){\n        mp[v] -= 1;\n        if (mp[v] == 0) {\n       \
-    \     auto t = st.lower_bound({v,2}); t--;\n            if (t->first == v) st.erase(t);\n\
-    \            else st.insert({v-1,2});\n            t = st.lower_bound({v,2});\n\
+    \u306Fll\nstruct MEX {\n    set<pair<ll,ll>> st;\n    map<ll,ll> mp;\n    void\
+    \ clear(){\n        st.clear();\n        mp.clear();\n    }\n    void set(vector<ll>\
+    \ x){\n        clear();\n        for (auto v : x) insert(v);\n    }\n    void\
+    \ insert(ll v) {\n        mp[v] += 1;\n        if (mp[v] > 1){\n            return;\n\
+    \        }\n        auto t = st.lower_bound({v-1,2});\n        if (t != st.end()\
+    \ && t->first == v-1) t = st.erase(t);\n        else st.insert({v,1});\n     \
+    \   if (t != st.end() && t->first == v+1) st.erase(t);\n        else st.insert({v,2});\n\
+    \    }\n    void erase(ll v){\n        mp[v] -= 1;\n        if (mp[v] == 0) {\n\
+    \            auto t = st.lower_bound({v,2}); t--;\n            if (t->first ==\
+    \ v) st.erase(t);\n            else st.insert({v-1,2});\n            t = st.lower_bound({v,2});\n\
     \            if (t->first == v) st.erase(t);\n            else st.insert({v+1,1});\n\
     \        }\n    }\n    ll mex() {\n        auto t = st.lower_bound({0,-1});\n\
     \        if (t->first != 0) return 0;\n        else {\n            t++;\n    \
@@ -56,7 +58,7 @@ data:
   isVerificationFile: false
   path: data-structure/MEX.hpp
   requiredBy: []
-  timestamp: '2024-03-28 17:01:44+09:00'
+  timestamp: '2024-03-28 17:04:14+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: data-structure/MEX.hpp
