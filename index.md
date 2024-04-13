@@ -11,7 +11,7 @@ data:
     - icon: ':warning:'
       path: graph/Maze.hpp
       title: "\u30B0\u30EA\u30C3\u30C9\u8FF7\u8DEF(bfs)"
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: graph/RMQ_min.hpp
       title: graph/RMQ_min.hpp
     - icon: ':warning:'
@@ -30,16 +30,16 @@ data:
       title: math/prime_fac.hpp
   - name: template
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: template/template.hpp
       title: template/template.hpp
   verificationCategories:
   - name: tests
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: tests/RMQ_min.test.cpp
       title: tests/RMQ_min.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: tests/example.test.cpp
       title: tests/example.test.cpp
 layout: toppage
